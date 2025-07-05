@@ -64,7 +64,6 @@ nav li:first-child {
   background-color: transparent;
 }
 
-/* Sidebar (Mobile Menu) */
 .sidebar {
   position: fixed;
   top: 0;
