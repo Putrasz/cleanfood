@@ -1,9 +1,80 @@
-h1 {
-    text-align: center;
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
- h2{
-    text-align: center;
- }
- h3{
-    text-align: center;
- }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f1fdf3;
+  color: #333;
+  padding: 1rem;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #1a8b3c;
+  margin-bottom: 1.5rem;
+}
+
+/* MENU SECTION */
+.menu-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 0.8rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card button {
+  margin-top: 0.8rem;
+  padding: 0.5rem 1rem;
+  background-color: #1a8b3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #146c2c;
+}
+
+/* Responsive layout */
+@media(min-width: 768px) {
+  .menu-cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+}
