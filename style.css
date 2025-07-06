@@ -198,11 +198,12 @@ nav li:first-child {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 1.5rem;
-    justify-content: space-between;
+    gap: 4rem;
+    justify-content: center;
   }
 
   .menu-cards .card {
-    flex: 1 1 25%;
+    flex: 0 0 auto;
+     max-width: 280px;
   }
 }
