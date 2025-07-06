@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Menu of the Week</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-  <nav>
-    <ul class="sidebar">
-      <li onclick=hideSidebar()><a href="#"><img src="img/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-    <ul>
-      <li><a href="#" class="companyName">CleanFood</a></li>
-      <li class="hideOnMobile"><a href="#">Home</a></li>
-      <li class="hideOnMobile"><a href="#">About</a></li>
-      <li class="hideOnMobile"><a href="#">Services</a></li>
-      <li class="hideOnMobile"><a href="#menu">Menu</a></li>
-      <li class="hideOnMobile"><a href="#">Contact Us</a></li>
-      <li class="menu-button" onclick=showSidebar()><a href="#"><img src="img/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>
-    </ul>
-  </nav>
-  
-  <!-- ini bagian menu -->
-  <section id="menu" class="menu-section">
-    <h2 class="section-title">Menu of the Week</h2>
-    <div class="menu-cards">
-      <div class="card">
-        <img src="greek salad.png" alt="Greek Salad">
-        <h3>Greek Salad</h3>
-        <p>$12.99</p>
-        <button>Order Now</button>
-      </div>
-      <div class="card">
-        <img src="salad sayur.png" alt="vegetable Salad">
-        <h3>vegetable Salad</h3>
-        <p>$12.99</p>
-        <button>Order Now</button>
-      </div>
-      <div class="card">
-        <img src="salad buah.png" alt="fruit Salad">
-        <h3>Fruit Salad</h3>
-        <p>$9.99</p>
-        <button>Order Now</button>
-      </div>
-      <div class="card">
-        <img src="caesar salad.png" alt="Caesar Salad">
-        <h3>Caesar Salad</h3>
-        <p>$9.99</p>
-        <button>Order Now</button>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu of the Week</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><img
+              src="img/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+          /></a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <ul>
+        <li><a href="#" class="companyName">CleanFood</a></li>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="hideOnMobile"><a href="#">Services</a></li>
+        <li class="hideOnMobile"><a href="#menu">Menu</a></li>
+        <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><img
+              src="img/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+          /></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <div class="home-section">
+      <div></div>
+      <div><img src="" alt="" /></div>
     </div>
-  </section>
-  <script>
-    function showSidebar(){
-      const sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'flex'
-    }
-    function hideSidebar(){
-      const sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'none'
-    }
-  </script>
-</body>
+
+    <!-- ini bagian menu -->
+    <section id="menu" class="menu-section">
+      <h2 class="section-title">Menu of the Week</h2>
+      <div class="menu-cards">
+        <div class="card">
+          <img src="img/greek salad.png" alt="Greek Salad" />
+          <h3>Greek Salad</h3>
+          <p>$12.99</p>
+          <button>Order Now</button>
+        </div>
+        <div class="card">
+          <img src="img/salad sayur.png" alt="vegetable Salad" />
+          <h3>vegetable Salad</h3>
+          <p>$12.99</p>
+          <button>Order Now</button>
+        </div>
+        <div class="card">
+          <img src="img/salad buah.png" alt="fruit Salad" />
+          <h3>Fruit Salad</h3>
+          <p>$9.99</p>
+          <button>Order Now</button>
+        </div>
+        <div class="card">
+          <img src="img/caesar salad.png" alt="Caesar Salad" />
+          <h3>Caesar Salad</h3>
+          <p>$9.99</p>
+          <button>Order Now</button>
+        </div>
+      </div>
+    </section>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
 </html>
