@@ -12,7 +12,6 @@ body {
   background-color: #f3f8f4;
 }
 
-/* NAVBAR */
 nav {
   background-color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
@@ -20,16 +19,6 @@ nav {
   width: 100%;
   top: 0;
   z-index: 1000;
-  animation: slideDown 0.5s ease-in-out;
-}
-
-@keyframes slideDown {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
 }
 
 nav ul {
@@ -100,22 +89,6 @@ nav li:first-child {
 
 .menu-button {
   display: none;
-}
-
-@media (max-width: 800px) {
-  .hideOnMobile {
-    display: none;
-  }
-
-  .menu-button {
-    display: block;
-  }
-}
-
-@media (max-width: 400px) {
-  .sidebar {
-    width: 100%;
-  }
 }
 
 @media (max-width: 800px) {
@@ -826,22 +799,6 @@ nav li:first-child {
 @media (min-width: 342px) and (max-width:532px) {
     .footer-columns .footer-column:first-child {
     transform: translateX(-5px);
-  }
-}
-
-/* DESKTOP / LARGE SCREENS */
-@media (min-width: 1024px) {
-  .menu-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 4rem;
-    justify-content: center;
-  }
-
-  .menu-cards .card {
-    flex: 0 0 auto;
-    max-width: 280px;
   }
 }
 
