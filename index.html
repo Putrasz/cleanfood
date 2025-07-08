@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu of the Week</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <nav>
@@ -19,8 +23,8 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
       <ul>
         <li><a href="#" class="companyName">CleanFood</a></li>
@@ -45,36 +49,67 @@
       <div><img src="" alt="" /></div>
     </div>
 
-    <!-- ini bagian menu -->
-    <section id="menu" class="menu-section">
-      <h2 class="section-title">Menu of the Week</h2>
-      <div class="menu-cards">
-        <div class="card">
-          <img src="img/greek salad.png" alt="Greek Salad" />
-          <h3>Greek Salad</h3>
-          <p>$12.99</p>
-          <button>Order Now</button>
-        </div>
-        <div class="card">
-          <img src="img/salad sayur.png" alt="vegetable Salad" />
-          <h3>vegetable Salad</h3>
-          <p>$12.99</p>
-          <button>Order Now</button>
-        </div>
-        <div class="card">
-          <img src="img/salad buah.png" alt="fruit Salad" />
-          <h3>Fruit Salad</h3>
-          <p>$9.99</p>
-          <button>Order Now</button>
-        </div>
-        <div class="card">
-          <img src="img/caesar salad.png" alt="Caesar Salad" />
-          <h3>Caesar Salad</h3>
-          <p>$9.99</p>
-          <button>Order Now</button>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="info-text">
+            <h3>CleanFood HQ</h3>
+            <ul class="contact-details">
+              <li>
+                <i class="fa-solid fa-location-dot"></i> Jl. Sehat No.10,
+                Bandung, Indonesia
+              </li>
+              <li>
+                <i class="fa-regular fa-envelope"></i> cleanfood@email.com
+              </li>
+              <li><i class="fa-solid fa-phone"></i> +62 812-3456-7890</li>
+            </ul>
+          </div>
+          <div class="info-button">
+            <a href="mailto:cleanfood@email.com" class="contact-btn"
+              >Contact us now</a
+            >
+          </div>
         </div>
       </div>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h4>Services</h4>
+              <ul>
+                <li>Delivery</li>
+                <li>Catering Services</li>
+                <li>Meal Planning</li>
+                <li>Custom Meal Plans</li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Information</h4>
+              <ul>
+                <li>Event</li>
+                <li>Contact us</li>
+                <li>Privacy policy</li>
+                <li>Terms of service</li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Address</h4>
+              <ul>
+                <li>Jl. Sehat No.10</li>
+                <li>Bandung - 40991</li>
+                <li>+62 812-3456-7890</li>
+                <li>cleanfood@email.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="footer-copy">&copy; 2025 CleanFood. All rights reserved.</p>
+      </footer>
     </section>
+
     <script>
       function showSidebar() {
         const sidebar = document.querySelector(".sidebar");
