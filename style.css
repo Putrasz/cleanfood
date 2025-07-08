@@ -299,6 +299,7 @@ nav li:first-child {
 
 /* ABOOUT SECTION */
 .about-section {
+  scroll-margin-top: 60px;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -413,6 +414,7 @@ nav li:first-child {
 
 /* SERVICE START*/
 .services-section {
+  scroll-margin-top: 130px;
   max-width: 1400px;
   margin: 100px auto;
   text-align: center;
@@ -507,6 +509,7 @@ nav li:first-child {
 
 /* MENU START */
 .menu-section {
+  scroll-margin-top: 60px;
   max-width: 1400px;
   margin: auto;
   padding: 3rem 2rem;
